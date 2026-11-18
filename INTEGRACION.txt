@@ -1,0 +1,7 @@
+Esta entrega compila de forma independiente. Para integrar:
+1. P2 confirma firma y namespace de su funcion de makespan.
+2. P1 confirma interfaz de fuerza bruta y formato de instancias.
+3. Todos usan indices de trabajos 0..n-1.
+4. Unificar el calculo de makespan para evitar duplicacion.
+5. Incorporar fuerza bruta al menu y comparar ambos algoritmos con las mismas matrices.
+No sobrescribir el codigo de P1/P2 sin revisar las firmas acordadas.
