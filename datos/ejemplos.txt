@@ -1,0 +1,25 @@
+# Instancia 1: 4 trabajos, 2 maquinas (Caso clasico Johnson)
+4 2
+5 2
+1 6
+9 7
+3 8
+
+# Instancia 2: 4 trabajos, 3 maquinas (Para comparar con NEH)
+4 3
+3 2 4
+4 3 2
+2 5 3
+5 2 3
+
+# Instancia 3: 9 trabajos, 3 maquinas (Para medir la explosion combinatoria de Fuerza Bruta: 9! = 362,880)
+9 3
+12 15 8
+9 11 14
+16 7 10
+8 13 12
+14 9 11
+11 16 9
+7 12 15
+15 8 13
+10 14 7
