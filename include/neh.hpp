@@ -1,61 +1,43 @@
-#ifndef FLOWSHOP_NEH_HPP
-#define FLOWSHOP_NEH_HPP
 #include <algorithm>
 #include <numeric>
-#include <stdexcept>
 #include <utility>
 #include <vector>
 
-namespace flowshop {
-using MatrizTiempos = std::vector<std::vector<int>>;
-using Secuencia = std::vector<int>;
+#include "makespan.hpp"
 
-inline void validarInstancia(const MatrizTiempos& p) {
-    if (p.empty() || p[0].empty()) throw std::invalid_argument("Instancia vacia.");
-    const auto m = p[0].size();
-    for (const auto& fila : p) {
-        if (fila.size() != m) throw std::invalid_argument("Filas con distinto numero de maquinas.");
-        for (int x : fila) if (x < 0) throw std::invalid_argument("Tiempos negativos.");
-    }
-}
+namespace fs {
 
-// Makespan para una secuencia; trabajos identificados con indices 0..n-1.
-inline long long makespanNEH(const MatrizTiempos& p, const Secuencia& orden) {
+// NEH: ordena trabajos por carga total y los inserta donde minimizan el makespan.
+inline Permutacion resolverNEH(const Matriz& p) {
     validarInstancia(p);
-    std::vector<long long> fin(p[0].size(), 0);
-    for (int t : orden) {
-        if (t < 0 || static_cast<std::size_t>(t) >= p.size())
-            throw std::out_of_range("Trabajo fuera de rango.");
-        fin[0] += p[t][0];
-        for (std::size_t j = 1; j < fin.size(); ++j)
-            fin[j] = std::max(fin[j], fin[j-1]) + p[t][j];
-    }
-    return fin.back();
-}
 
-// NEH: ordenar por suma descendente e insertar en la posicion de menor makespan.
-inline Secuencia resolverNEH(const MatrizTiempos& p) {
-    validarInstancia(p);
     const int n = static_cast<int>(p.size());
-    std::vector<int> trabajos(n);
+    Permutacion trabajos(n);
     std::iota(trabajos.begin(), trabajos.end(), 0);
-    std::vector<long long> suma(n, 0);
+
+    std::vector<long long> carga(n, 0);
     for (int i = 0; i < n; ++i)
-        for (int x : p[i]) suma[i] += x;
+        for (int tiempo : p[i]) carga[i] += tiempo;
 
     std::stable_sort(trabajos.begin(), trabajos.end(),
-        [&](int a, int b) { return suma[a] > suma[b]; });
+                     [&](int a, int b) { return carga[a] > carga[b]; });
 
-    Secuencia orden;
-    for (int t : trabajos) {
-        long long mejor = -1;
-        Secuencia mejorOrden;
+    Permutacion orden;
+    for (int trabajo : trabajos) {
+        int mejorMakespan = -1;
+        Permutacion mejorOrden;
+
         for (std::size_t pos = 0; pos <= orden.size(); ++pos) {
-            Secuencia candidata = orden;
-            candidata.insert(candidata.begin() + static_cast<std::ptrdiff_t>(pos), t);
-            const long long valor = makespanNEH(p, candidata);
-            if (mejor == -1 || valor < mejor) {
-                mejor = valor;
+            Permutacion candidata = orden;
+            candidata.push_back(trabajo);
+            for (std::size_t i = candidata.size() - 1; i > pos; --i)
+                candidata[i] = candidata[i - 1];
+            candidata[pos] = trabajo;
+
+            const int valor = makespan(p, candidata);
+
+            if (mejorMakespan == -1 || valor < mejorMakespan) {
+                mejorMakespan = valor;
                 mejorOrden = std::move(candidata);
             }
         }
@@ -63,5 +45,5 @@ inline Secuencia resolverNEH(const MatrizTiempos& p) {
     }
     return orden;
 }
+
 }
-#endif
