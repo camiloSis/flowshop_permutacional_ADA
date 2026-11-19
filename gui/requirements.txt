@@ -1,4 +1,4 @@
-# Dependencias necesarias en Fedora/Linux
+# Dependencias necesarias en FEDORA
 qt6-qtbase-devel
 qt6-qttools-devel
 cmake >= 3.16
