@@ -71,7 +71,7 @@ CMakeFiles/flowshop_gui_autogen: flowshop_gui_autogen/timestamp
 flowshop_gui_autogen/timestamp: /usr/lib64/qt6/libexec/moc
 flowshop_gui_autogen/timestamp: CMakeFiles/flowshop_gui_autogen.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/camiloasd/Documentos/VS_ALT/lineas_produccion_ADA/flowshop_permutacional_ADA/build-qt/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target flowshop_gui"
-	/usr/bin/cmake -E cmake_autogen /home/camiloasd/Documentos/VS_ALT/lineas_produccion_ADA/flowshop_permutacional_ADA/build-qt/CMakeFiles/flowshop_gui_autogen.dir/AutogenInfo.json Debug
+	/usr/bin/cmake -E cmake_autogen /home/camiloasd/Documentos/VS_ALT/lineas_produccion_ADA/flowshop_permutacional_ADA/build-qt/CMakeFiles/flowshop_gui_autogen.dir/AutogenInfo.json Release
 	/usr/bin/cmake -E touch /home/camiloasd/Documentos/VS_ALT/lineas_produccion_ADA/flowshop_permutacional_ADA/build-qt/flowshop_gui_autogen/timestamp
 
 CMakeFiles/flowshop_gui_autogen.dir/codegen:

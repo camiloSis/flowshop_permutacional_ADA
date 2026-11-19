@@ -955,9 +955,7 @@ CMakeFiles/flowshop_gui.dir/GanttWidget.cpp.o: /home/camiloasd/Documentos/VS_ALT
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
-  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
-  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -1459,9 +1457,7 @@ CMakeFiles/flowshop_gui.dir/GanttWindow.cpp.o: /home/camiloasd/Documentos/VS_ALT
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
-  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
-  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -1981,9 +1977,7 @@ CMakeFiles/flowshop_gui.dir/MainWindow.cpp.o: /home/camiloasd/Documentos/VS_ALT/
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
-  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
-  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -2563,9 +2557,7 @@ CMakeFiles/flowshop_gui.dir/flowshop_gui_autogen/mocs_compilation.cpp.o: flowsho
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
-  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
-  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -3070,9 +3062,7 @@ CMakeFiles/flowshop_gui.dir/main.cpp.o: /home/camiloasd/Documentos/VS_ALT/lineas
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
-  /usr/include/bits/stdio.h \
   /usr/include/bits/stdio_lim.h \
-  /usr/include/bits/stdlib-bsearch.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
@@ -3752,8 +3742,6 @@ CMakeFiles/flowshop_gui.dir/GanttWidget.cpp.o:
 
 /usr/include/c++/16/stdlib.h:
 
-/usr/include/bits/stdlib-bsearch.h:
-
 flowshop_gui_autogen/EWIEGA46WW/moc_MainWindow.cpp:
 
 /usr/include/bits/mathcalls.h:
@@ -4129,8 +4117,6 @@ CMakeFiles/flowshop_gui.dir/MainWindow.cpp.o:
 /usr/lib64/cmake/Qt6Gui/Qt6QEglFSKmsEglDeviceIntegrationPluginConfig.cmake:
 
 /usr/lib64/cmake/Qt6Gui/Qt6QEglFSIntegrationPluginTargets-relwithdebinfo.cmake:
-
-/usr/include/bits/stdio.h:
 
 /usr/lib64/cmake/Qt6Gui/Qt6QEglFSIntegrationPluginAdditionalTargetInfo.cmake:
 

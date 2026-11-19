@@ -1,0 +1,12 @@
+# Dependencias necesarias en Fedora/Linux
+qt6-qtbase-devel
+qt6-qttools-devel
+cmake >= 3.16
+ninja-build
+gcc-c++
+
+# Ejemplo de instalacion en Fedora:
+# sudo dnf install qt6-qtbase-devel qt6-qttools-devel cmake ninja-build gcc-c++
+
+# En Debian/Ubuntu:
+# sudo apt install qt6-base-dev qt6-tools-dev cmake ninja-build g++
