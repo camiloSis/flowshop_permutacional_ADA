@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_flowshop_gui_FILE /home/camiloasd/Documentos/VS_ALT/lineas_produccion_ADA/flowshop_permutacional_ADA/build-qt/flowshop_gui)
+set(__QT_DEPLOY_TARGET_flowshop_gui_TYPE EXECUTABLE)

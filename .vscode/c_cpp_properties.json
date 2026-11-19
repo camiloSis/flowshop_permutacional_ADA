@@ -1,0 +1,20 @@
+{
+  "configurations": [
+    {
+      "name": "Qt6 Linux",
+      "compilerPath": "/usr/bin/g++",
+      "cStandard": "c17",
+      "cppStandard": "c++17",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "/usr/include/qt6",
+        "/usr/include/qt6/QtWidgets",
+        "/usr/include/qt6/QtGui",
+        "/usr/include/qt6/QtCore",
+        "/usr/lib64/qt6/mkspecs/linux-g++"
+      ],
+      "compileCommands": "${workspaceFolder}/build-qt/compile_commands.json"
+    }
+  ],
+  "version": 4
+}

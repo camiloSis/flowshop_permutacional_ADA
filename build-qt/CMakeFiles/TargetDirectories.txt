@@ -1,0 +1,5 @@
+/home/camiloasd/Documentos/VS_ALT/lineas_produccion_ADA/flowshop_permutacional_ADA/build-qt/CMakeFiles/flowshop_gui.dir
+/home/camiloasd/Documentos/VS_ALT/lineas_produccion_ADA/flowshop_permutacional_ADA/build-qt/CMakeFiles/edit_cache.dir
+/home/camiloasd/Documentos/VS_ALT/lineas_produccion_ADA/flowshop_permutacional_ADA/build-qt/CMakeFiles/rebuild_cache.dir
+/home/camiloasd/Documentos/VS_ALT/lineas_produccion_ADA/flowshop_permutacional_ADA/build-qt/CMakeFiles/flowshop_gui_autogen_timestamp_deps.dir
+/home/camiloasd/Documentos/VS_ALT/lineas_produccion_ADA/flowshop_permutacional_ADA/build-qt/CMakeFiles/flowshop_gui_autogen.dir
